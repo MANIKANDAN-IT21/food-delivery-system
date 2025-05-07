@@ -16,10 +16,9 @@ public class Delivery {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String deliveryId;
-    private String orderId;
-    private String address;
+    private Long deliveryId;
+    private Long orderId;
+    private Long agentId;
     private String status;
 
 }
