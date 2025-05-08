@@ -11,7 +11,7 @@ import com.fds.dto.PaymentResponse;
 import com.fds.service.PaymentService;
 
 @RestController
-@RequestMapping("payment")
+@RequestMapping("/payment")
 public class PaymentController {
 
     @Autowired
