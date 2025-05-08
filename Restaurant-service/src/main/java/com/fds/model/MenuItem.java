@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "menu_info")
+@Table(name = "menu_info")     
 public class MenuItem {
 	
 	@Id
