@@ -6,14 +6,19 @@ import com.fds.model.Customer;
 
 public interface CustomerService {
 	
-	Customer register(Customer customer);
-
-	Optional<Customer> login(String email, String password);
-
-	Optional<Customer> getProfile(Long id);
-
-	Customer updateProfile(Long id, Customer updated);
+	//Registers a new customer
+	public abstract Customer register(Customer customer);
 	
-	//delete,validation,exception,erukaserver,gateway,junit,mockito
+	//Logs in the customer using email and password
+	public abstract  Optional<Customer> login(String email, String password);
+	
+	//Retrieves customer profile details by ID
+	public abstract Optional<Customer> getProfile(Long id);
+
+	//Updates customer profile information
+	public abstract Customer updateProfile(Long id, Customer updated);
+	
+	//delete customer data
+	public abstract String deleteUser(Long id);
 
 }

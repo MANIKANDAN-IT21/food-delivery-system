@@ -22,6 +22,8 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long customerId;
 	
+	//validations
+	
 	@NotBlank(message = "Name cannot be blank")
 	private String name;
 	
