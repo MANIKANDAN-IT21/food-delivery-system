@@ -8,6 +8,8 @@ import com.fds.model.MenuItem;
 
 public interface RestautrantRepository extends JpaRepository<MenuItem, Long>{
 	
-	List<MenuItem> findByRestaurantId(Long restaurantId);
+	MenuItem findByRestaurantId(Long restaurantId);
+	
+//	List<MenuItem> findByRestaurantId(Long restaurantId);
 
 }

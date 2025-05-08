@@ -25,28 +25,32 @@ public class RestaurantController {
 	
 	@PostMapping
 	public MenuItem addItem(@RequestBody MenuItem item) {
+		// Adds a new menu item
 		return service.addMenuItem(item);
 	}
 	
 	@PutMapping("/{id}")
 	public ResponseEntity<MenuItem> updateItem(@PathVariable Long id, @RequestBody MenuItem item) {
+		// Updates an existing menu item
 		return ResponseEntity.ok(service.updateMenuItem(id, item));
 	}
 	
 	@GetMapping("/restaurant/{restaurantId}")
-	public ResponseEntity<List<MenuItem>> getMenuByRestaurant(@PathVariable Long restaurantId) {
-		return ResponseEntity.ok(service.getMenuByRestaurant(restaurantId));
+	public MenuItem getMenuByRestaurant(@PathVariable Long restaurantId) {
+		// Retrieves a menu item by restaurant ID
+		return service.getMenuByRestaurant(restaurantId);
 	}
 	
 	@GetMapping("/getall")
 	public List<MenuItem> getAllMenu() {
-		return service.getAllMenuItems();
+		return service.getAllMenuItems();// Fetches all menu items
 	}
+
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<String> deleteItem(@PathVariable Long id) {
 		service.deleteMenuItem(id);
-		return ResponseEntity.ok("Deleted");
+		return ResponseEntity.ok("Deleted");// Deletes a menu item by ID and returns a success message
 	}
 
 }
