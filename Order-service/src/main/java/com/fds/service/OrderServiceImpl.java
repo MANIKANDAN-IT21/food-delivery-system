@@ -47,7 +47,7 @@ public class OrderServiceImpl implements OrderService {
 	        order.setCustomerId(request.getCustomerId());
 	        order.setRestaurantId(item.getRestaurantId());
 	        order.setTotalAmount(item.getPrice());
-	        order.setStatus("Pending");
+	        order.setStatus("Your order is pending. Please complete the payment to proceed.");
 
 	        return repository.save(order);
 	    }

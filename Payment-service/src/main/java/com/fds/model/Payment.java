@@ -14,27 +14,24 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "menu_info")
-public class MenuItem {
-	
+@AllArgsConstructor
+@Table(name = "payment_info")
+public class Payment {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long itemId;
-	//validation
-	
-	@NotBlank(message = "Name cannot be blank")
-	private String name;
-	
-	@NotBlank(message = "Name cannot be blank")
-	private String description;
-	
-	@NotNull(message = "Price cannot be null")
-	@Positive(message = "Price must be positive")
-	private Double price;
-	
-	private Long restaurantId;
-	
-	
+	private Long paymentId;
+	private Long orderId;
+
+	@NotBlank(message = "Payment method cannot be blank")
+	private String paymentMethod;
+
+	@NotNull(message = "Amount cannot be null")
+	@Positive(message = "Amount must be positive")
+	private Double amount;
+
+	@NotBlank(message = "Status cannot be blank")
+	private String status; // Successful or Failed
+
 }
