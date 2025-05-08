@@ -61,7 +61,7 @@ public class DeliveryController {
     }
 
     @GetMapping("/{id}")
-    public Delivery get(@PathVariable Long id) {
+    public Delivery get(@PathVariable("id") Long id) {
     	// Fetches details of a specific delivery using its ID
         return deliveryService.getDelivery(id);
     }
