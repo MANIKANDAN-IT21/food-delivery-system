@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,6 +27,8 @@ import com.fds.feign.OrderServiceClient;
 import com.fds.feign.PaymentServiceClient;
 import com.fds.model.Customer;
 import com.fds.service.CustomerServiceImpl;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/customers") // Base path for all customer-related endpoints
@@ -72,7 +75,7 @@ public class CustomerController {
 
 	// Registers a new customer
 	@PostMapping("/register")
-	public ResponseEntity<Customer> register(@RequestBody Customer customer) {
+	public ResponseEntity<Customer> register(@RequestBody @Validated Customer customer) {
 		return ResponseEntity.ok(service.register(customer));
 	}
 
