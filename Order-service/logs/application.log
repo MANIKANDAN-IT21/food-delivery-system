@@ -1,0 +1,57 @@
+2025-05-09T13:53:46.709+05:30  INFO 24056 --- [Order-service] [main] com.fds.OrderServiceApplication          : Starting OrderServiceApplication using Java 21.0.6 with PID 24056 (C:\Users\2400629\git\FDS\Order-service\target\classes started by 2400629 in C:\Users\2400629\git\FDS\Order-service)
+2025-05-09T13:53:46.716+05:30  INFO 24056 --- [Order-service] [main] com.fds.OrderServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T13:53:46.832+05:30  INFO 24056 --- [Order-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:6666
+2025-05-09T13:53:46.834+05:30  INFO 24056 --- [Order-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Order-service, profiles=[default], label=null, version=38db4d25810ca9d3fddec8552e197ebb532f962e, state=
+2025-05-09T13:53:48.488+05:30  INFO 24056 --- [Order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09T13:53:48.902+05:30  INFO 24056 --- [Order-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 386 ms. Found 1 JPA repository interface.
+2025-05-09T13:53:49.422+05:30  INFO 24056 --- [Order-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7d8928e2-0605-37c9-91d2-55cb67bca09c
+2025-05-09T13:53:50.190+05:30  INFO 24056 --- [Order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 3333 (http)
+2025-05-09T13:53:50.219+05:30  INFO 24056 --- [Order-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T13:53:50.220+05:30  INFO 24056 --- [Order-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-09T13:53:50.396+05:30  INFO 24056 --- [Order-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T13:53:50.396+05:30  INFO 24056 --- [Order-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3558 ms
+2025-05-09T13:53:50.709+05:30  INFO 24056 --- [Order-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09T13:53:50.853+05:30  INFO 24056 --- [Order-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-09T13:53:50.941+05:30  INFO 24056 --- [Order-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-09T13:53:51.650+05:30  INFO 24056 --- [Order-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09T13:53:51.722+05:30  INFO 24056 --- [Order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-09T13:53:52.452+05:30  INFO 24056 --- [Order-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@578d5d02
+2025-05-09T13:53:52.455+05:30  INFO 24056 --- [Order-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-09T13:53:52.562+05:30  WARN 24056 --- [Order-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09T13:53:52.612+05:30  INFO 24056 --- [Order-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-09T13:53:54.836+05:30  INFO 24056 --- [Order-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09T13:53:54.944+05:30  INFO 24056 --- [Order-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09T13:53:55.561+05:30  WARN 24056 --- [Order-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09T13:53:56.576+05:30  INFO 24056 --- [Order-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-09T13:53:56.627+05:30  WARN 24056 --- [Order-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-09T13:53:56.729+05:30  INFO 24056 --- [Order-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-09T13:53:56.775+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-09T13:53:56.784+05:30  INFO 24056 --- [Order-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T13:53:56.812+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-09T13:53:56.812+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-09T13:53:56.813+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-09T13:53:56.813+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-09T13:53:56.813+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-09T13:53:56.813+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-09T13:53:56.813+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-09T13:53:57.283+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-09T13:53:57.286+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-09T13:53:57.290+05:30  INFO 24056 --- [Order-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-09T13:53:57.291+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746779037291 with initial instances count: 1
+2025-05-09T13:53:57.296+05:30  INFO 24056 --- [Order-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2025-05-09T13:53:57.297+05:30  INFO 24056 --- [Order-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746779037297, current=UP, previous=STARTING]
+2025-05-09T13:53:57.301+05:30  INFO 24056 --- [Order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LTIN600905.cts.com:Order-service:3333: registering service...
+2025-05-09T13:53:57.338+05:30  INFO 24056 --- [Order-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 3333 (http) with context path '/'
+2025-05-09T13:53:57.340+05:30  INFO 24056 --- [Order-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 3333
+2025-05-09T13:53:57.359+05:30  INFO 24056 --- [Order-service] [main] com.fds.OrderServiceApplication          : Started OrderServiceApplication in 13.603 seconds (process running for 15.526)
+2025-05-09T13:53:57.382+05:30  INFO 24056 --- [Order-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LTIN600905.cts.com:Order-service:3333 - registration status: 204
+2025-05-09T13:58:56.824+05:30  INFO 24056 --- [Order-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T14:03:56.833+05:30  INFO 24056 --- [Order-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T14:08:56.839+05:30  INFO 24056 --- [Order-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

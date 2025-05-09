@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,7 +25,7 @@ public class RestaurantController {
 	RestaurantService service;
 	
 	@PostMapping
-	public MenuItem addItem(@RequestBody MenuItem item) {
+	public MenuItem addItem(@RequestBody @Validated MenuItem item) {
 		// Adds a new menu item
 		return service.addMenuItem(item);
 	}

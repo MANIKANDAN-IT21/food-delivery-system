@@ -1,0 +1,57 @@
+2025-05-09T13:53:45.799+05:30  INFO 5464 --- [Payment-service] [main] com.fds.PaymentServiceApplication        : Starting PaymentServiceApplication using Java 21.0.6 with PID 5464 (C:\Users\2400629\git\FDS\Payment-service\target\classes started by 2400629 in C:\Users\2400629\git\FDS\Payment-service)
+2025-05-09T13:53:45.805+05:30  INFO 5464 --- [Payment-service] [main] com.fds.PaymentServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T13:53:45.909+05:30  INFO 5464 --- [Payment-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:6666
+2025-05-09T13:53:45.910+05:30  INFO 5464 --- [Payment-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Payment-service, profiles=[default], label=null, version=38db4d25810ca9d3fddec8552e197ebb532f962e, state=
+2025-05-09T13:53:47.583+05:30  INFO 5464 --- [Payment-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09T13:53:48.006+05:30  INFO 5464 --- [Payment-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 399 ms. Found 1 JPA repository interface.
+2025-05-09T13:53:48.505+05:30  INFO 5464 --- [Payment-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d15175a3-5aee-328f-aa94-5e3c43983d90
+2025-05-09T13:53:49.431+05:30  INFO 5464 --- [Payment-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2025-05-09T13:53:49.470+05:30  INFO 5464 --- [Payment-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T13:53:49.471+05:30  INFO 5464 --- [Payment-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-09T13:53:49.678+05:30  INFO 5464 --- [Payment-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T13:53:49.679+05:30  INFO 5464 --- [Payment-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3764 ms
+2025-05-09T13:53:50.036+05:30  INFO 5464 --- [Payment-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09T13:53:50.151+05:30  INFO 5464 --- [Payment-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-09T13:53:50.238+05:30  INFO 5464 --- [Payment-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-09T13:53:50.893+05:30  INFO 5464 --- [Payment-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09T13:53:50.966+05:30  INFO 5464 --- [Payment-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-09T13:53:51.617+05:30  INFO 5464 --- [Payment-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e7fa4b0
+2025-05-09T13:53:51.622+05:30  INFO 5464 --- [Payment-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-09T13:53:51.729+05:30  WARN 5464 --- [Payment-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09T13:53:51.766+05:30  INFO 5464 --- [Payment-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-09T13:53:53.930+05:30  INFO 5464 --- [Payment-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09T13:53:54.072+05:30  INFO 5464 --- [Payment-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09T13:53:54.745+05:30  WARN 5464 --- [Payment-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09T13:53:55.958+05:30  INFO 5464 --- [Payment-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-09T13:53:55.996+05:30  WARN 5464 --- [Payment-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-09T13:53:56.091+05:30  INFO 5464 --- [Payment-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-09T13:53:56.141+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-09T13:53:56.149+05:30  INFO 5464 --- [Payment-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T13:53:56.165+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-09T13:53:56.166+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-09T13:53:56.166+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-09T13:53:56.166+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-09T13:53:56.166+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-09T13:53:56.166+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-09T13:53:56.166+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-09T13:53:56.583+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-09T13:53:56.586+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-09T13:53:56.590+05:30  INFO 5464 --- [Payment-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-09T13:53:56.593+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746779036592 with initial instances count: 1
+2025-05-09T13:53:56.599+05:30  INFO 5464 --- [Payment-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2025-05-09T13:53:56.600+05:30  INFO 5464 --- [Payment-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746779036600, current=UP, previous=STARTING]
+2025-05-09T13:53:56.604+05:30  INFO 5464 --- [Payment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/LTIN600905.cts.com:Payment-service:4444: registering service...
+2025-05-09T13:53:56.645+05:30  INFO 5464 --- [Payment-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2025-05-09T13:53:56.647+05:30  INFO 5464 --- [Payment-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 4444
+2025-05-09T13:53:56.667+05:30  INFO 5464 --- [Payment-service] [main] com.fds.PaymentServiceApplication        : Started PaymentServiceApplication in 14.052 seconds (process running for 15.63)
+2025-05-09T13:53:56.675+05:30  INFO 5464 --- [Payment-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/LTIN600905.cts.com:Payment-service:4444 - registration status: 204
+2025-05-09T13:58:56.183+05:30  INFO 5464 --- [Payment-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T14:03:56.196+05:30  INFO 5464 --- [Payment-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T14:08:56.211+05:30  INFO 5464 --- [Payment-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

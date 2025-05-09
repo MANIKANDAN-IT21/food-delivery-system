@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -33,8 +35,8 @@ public class MenuItem {
 	@NotNull(message = "Price cannot be null")
 	@Positive(message = "Price must be positive")
 	private Double price;
-	
-	private Long restaurantId;//
+
+    private Long restaurantId;
 	
 	
 }

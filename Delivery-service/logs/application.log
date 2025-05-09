@@ -1,0 +1,57 @@
+2025-05-09T13:53:48.201+05:30  INFO 21000 --- [Delivery-service] [main] com.fds.DeliveryServiceApplication       : Starting DeliveryServiceApplication using Java 21.0.6 with PID 21000 (C:\Users\2400629\git\FDS\Delivery-service\target\classes started by 2400629 in C:\Users\2400629\git\FDS\Delivery-service)
+2025-05-09T13:53:48.206+05:30  INFO 21000 --- [Delivery-service] [main] com.fds.DeliveryServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T13:53:48.309+05:30  INFO 21000 --- [Delivery-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:6666
+2025-05-09T13:53:48.311+05:30  INFO 21000 --- [Delivery-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Delivery-service, profiles=[default], label=null, version=38db4d25810ca9d3fddec8552e197ebb532f962e, state=
+2025-05-09T13:53:49.943+05:30  INFO 21000 --- [Delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09T13:53:50.329+05:30  INFO 21000 --- [Delivery-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 365 ms. Found 2 JPA repository interfaces.
+2025-05-09T13:53:50.729+05:30  INFO 21000 --- [Delivery-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4b80a65d-0970-3206-b052-b7c8a49ed767
+2025-05-09T13:53:51.505+05:30  INFO 21000 --- [Delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5555 (http)
+2025-05-09T13:53:51.533+05:30  INFO 21000 --- [Delivery-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T13:53:51.533+05:30  INFO 21000 --- [Delivery-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-09T13:53:51.692+05:30  INFO 21000 --- [Delivery-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T13:53:51.692+05:30  INFO 21000 --- [Delivery-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3375 ms
+2025-05-09T13:53:52.021+05:30  INFO 21000 --- [Delivery-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09T13:53:52.168+05:30  INFO 21000 --- [Delivery-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-09T13:53:52.239+05:30  INFO 21000 --- [Delivery-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-09T13:53:52.932+05:30  INFO 21000 --- [Delivery-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09T13:53:53.024+05:30  INFO 21000 --- [Delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-09T13:53:53.899+05:30  INFO 21000 --- [Delivery-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@783f5f71
+2025-05-09T13:53:53.904+05:30  INFO 21000 --- [Delivery-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-09T13:53:54.030+05:30  WARN 21000 --- [Delivery-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09T13:53:54.083+05:30  INFO 21000 --- [Delivery-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-09T13:53:56.040+05:30  INFO 21000 --- [Delivery-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09T13:53:56.139+05:30  INFO 21000 --- [Delivery-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09T13:53:56.737+05:30  WARN 21000 --- [Delivery-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09T13:53:57.806+05:30  INFO 21000 --- [Delivery-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-09T13:53:57.854+05:30  WARN 21000 --- [Delivery-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-09T13:53:57.932+05:30  INFO 21000 --- [Delivery-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-09T13:53:57.962+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-09T13:53:57.970+05:30  INFO 21000 --- [Delivery-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T13:53:57.981+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-09T13:53:57.981+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-09T13:53:57.981+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-09T13:53:57.981+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-09T13:53:57.981+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-09T13:53:57.981+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-09T13:53:57.982+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-09T13:53:58.299+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-09T13:53:58.302+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-09T13:53:58.304+05:30  INFO 21000 --- [Delivery-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-09T13:53:58.306+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746779038306 with initial instances count: 1
+2025-05-09T13:53:58.311+05:30  INFO 21000 --- [Delivery-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DELIVERY-SERVICE with eureka with status UP
+2025-05-09T13:53:58.312+05:30  INFO 21000 --- [Delivery-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746779038312, current=UP, previous=STARTING]
+2025-05-09T13:53:58.315+05:30  INFO 21000 --- [Delivery-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DELIVERY-SERVICE/LTIN600905.cts.com:Delivery-service:5555: registering service...
+2025-05-09T13:53:58.349+05:30  INFO 21000 --- [Delivery-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5555 (http) with context path '/'
+2025-05-09T13:53:58.351+05:30  INFO 21000 --- [Delivery-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5555
+2025-05-09T13:53:58.368+05:30  INFO 21000 --- [Delivery-service] [main] com.fds.DeliveryServiceApplication       : Started DeliveryServiceApplication in 13.134 seconds (process running for 15.488)
+2025-05-09T13:53:58.388+05:30  INFO 21000 --- [Delivery-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DELIVERY-SERVICE/LTIN600905.cts.com:Delivery-service:5555 - registration status: 204
+2025-05-09T13:58:57.984+05:30  INFO 21000 --- [Delivery-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T14:03:57.997+05:30  INFO 21000 --- [Delivery-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-09T14:08:58.013+05:30  INFO 21000 --- [Delivery-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
