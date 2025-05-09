@@ -19,16 +19,6 @@ import com.fds.service.DeliveryService;
 @RestController
 @RequestMapping("/delivery")
 public class DeliveryController {
-
-//	@Autowired
-//	DeliveryServiceImpl service;
-	
-
-//
-//    @PostMapping("/status") // POST request to update delivery status
-//    public Delivery status(@RequestBody Delivery deliveryRequest) {
-//        return service.status(deliveryRequest);
-//    }
 	
 	@Autowired
     private DeliveryService deliveryService;
