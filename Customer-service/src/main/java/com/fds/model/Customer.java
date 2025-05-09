@@ -23,7 +23,7 @@ public class Customer {
 	private Long customerId;
 	
 	//validations
-	
+
 	@NotBlank(message = "Name cannot be blank")
 	private String name;
 	
